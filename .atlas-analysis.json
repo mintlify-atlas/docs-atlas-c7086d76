@@ -1,0 +1,119 @@
+{
+  "projectType": "saas",
+  "projectName": "Finavex",
+  "projectDescription": "Intelligent personal finance management platform for tracking expenses, budgets, savings goals, and making informed financial decisions",
+  "theme": "almond",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/transactions",
+              "features/budgeting",
+              "features/savings-goals",
+              "features/reports",
+              "features/ai-assistant"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "guide/authentication",
+              "guide/dashboard",
+              "guide/managing-transactions",
+              "guide/creating-budgets",
+              "guide/setting-goals"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/frontend",
+              "architecture/backend",
+              "architecture/database"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/register",
+              "api/auth/login",
+              "api/auth/password-reset"
+            ]
+          },
+          {
+            "group": "Transactions",
+            "pages": [
+              "api/transactions/create",
+              "api/transactions/list",
+              "api/transactions/get",
+              "api/transactions/update",
+              "api/transactions/delete"
+            ]
+          },
+          {
+            "group": "Savings",
+            "pages": [
+              "api/savings/create-plan",
+              "api/savings/list-plans",
+              "api/savings/add-money",
+              "api/savings/get-balance"
+            ]
+          },
+          {
+            "group": "AI Assistant",
+            "pages": [
+              "api/ai/chat",
+              "api/ai/insights"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Income and expense tracking with detailed transactions",
+    "Budget visualization and management",
+    "Savings goals with progress tracking",
+    "AI-powered financial insights and recommendations",
+    "Intelligent reports and analytics",
+    "Financial news integration",
+    "Secure JWT-based authentication",
+    "Multi-user support with personalized dashboards"
+  ],
+  "publicApiSurface": [
+    "POST /Users/login - User authentication",
+    "POST /Users/register - User registration",
+    "POST /Users/password/reset - Password reset",
+    "GET /movements/money-now - Get current balance",
+    "GET /movements/list - List all transactions",
+    "POST /movements/expense - Register expense",
+    "POST /movements/income - Register income",
+    "POST /savings/plan - Create savings plan",
+    "GET /savings/list - List savings plans",
+    "POST /savings/add - Add money to savings",
+    "GET /savings/balance - Get savings balance",
+    "POST /ai/chat - AI assistant chat",
+    "GET /ai/insights - Get AI financial insights"
+  ]
+}
